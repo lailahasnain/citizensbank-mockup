@@ -1,0 +1,336 @@
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+}
+
+body .header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px
+}
+
+body .header-slider img {
+  width: 100%
+}
+
+body .header-slider-mobile {
+  display: none
+}
+
+body section {
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+
+body section .section-heading {
+  color: #00945f;
+  font-size: 26px;
+  text-align: center;
+  margin: 40px 0px;
+  position: relative;
+  font-weight: normal;
+}
+
+body section .section-heading::after {
+  position: absolute;
+  height: 2px;
+  width: 73px;
+  background-color: #00945f;
+  content: "";
+  top: calc(100% + 15px);
+  left: calc(50% - 36px)
+}
+
+body section .para-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #888;
+  margin-top: 10px;
+}
+
+body section .para-text .learn-more-link {
+  color: #759b24;
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+}
+
+body section .view-careers-btn {
+  text-decoration: none;
+  background-color: #e97300;
+  padding: 5px 15px;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+body section .advantage-boxes {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+body section .advantage-boxes .box-item {
+  width: 50%;
+  margin-bottom: 70px;
+  padding-right: 30px;
+}
+
+body section .advantage-boxes .box-item .box-label {
+  font-size: 24px;
+  color: #00945f;
+  font-weight: normal;
+  margin: 0;
+}
+
+body section .advantage-boxes .box-item.withBorder {
+  padding-left: 40px;
+  padding-right: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+body section .advantage-boxes .box-item.withBorder::before {
+  position: absolute;
+  left: 0;
+  height: 60%;
+  content: "";
+  width: 1px;
+  background-color: #666;
+  top: calc(50% - 30%)
+}
+
+body section .home-loan-header {
+  width: 100%;
+  background-color: #00945f;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 24px;
+  color: #fff
+}
+
+body section .home-loan-body {
+  padding: 10px 50px;
+  background-color: #ebf7f5
+}
+
+body section.quote-section .quote-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+body section.quote-section .quote-wrapper .quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body section.quote-section .quote-wrapper .quote-container img {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+
+body section.quote-section .quote-wrapper .quote-container .quote-text {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.7;
+  max-width: 75%;
+  margin: 0 auto 10px;
+  background: url("../images/comma.png") top left no-repeat;
+}
+
+body section.quote-section .quote-wrapper .quote-container .quote-author-name {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #00945f;
+}
+
+footer {
+  border-top: 1px solid #00945f;
+  padding: 30px;
+  margin-top: 100px;
+}
+
+footer .social-sharing {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  display: flex;
+}
+
+footer .social-sharing .social-item {
+  background: transparent;
+  border: none;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 7px;
+}
+
+footer .social-sharing .social-item img {
+  height: 100%;
+  width: 100%;
+}
+
+footer p {
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+footer p a {
+  color: #666;
+}
+
+footer .site-map {
+  display: flex;
+  margin-top: 30px;
+}
+
+footer .site-map a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+
+footer .site-map span {
+  padding: 0px 10px;
+}
+
+@media(max-width: 1024px) {
+  body section.quote-section .quote-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body section.quote-section .quote-wrapper .quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  body section.quote-section .quote-wrapper .quote-container img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+  }
+
+  body section.quote-section .quote-wrapper .quote-container .quote-text {
+    padding: 0px 40px;
+  }
+
+  body section.quote-section .quote-wrapper .quote-container .quote-text br {
+    display: none;
+  }
+
+  body section.quote-section .quote-wrapper .quote-container .quote-author-name {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #00945f;
+  }
+
+  footer {
+    border-top: 1px solid #00945f;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 600px) {
+  body .header {
+    height: 80px;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  body .header img {
+    height: 20px;
+  }
+
+  body .header-slider {
+    display: none;
+  }
+
+  body .header-slider-mobile {
+    display: block;
+  }
+
+  body .header-slider-mobile img {
+    width: 100%;
+  }
+
+  body section {
+    padding: 0px 20px;
+  }
+
+  body section .advantage-boxes {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  body section .advantage-boxes .box-item {
+    width: 100%;
+    padding: 20px 0px;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 0;
+  }
+
+  body section .advantage-boxes .box-item.withBorder {
+    padding-left: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  body section .advantage-boxes .box-item.withBorder::before {
+    display: none;
+  }
+
+  body section .home-loan-header {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 20px 0;
+  }
+
+  body section .view-careers-btn {
+    margin-bottom: 30px;
+  }
+
+  body section .home-loan-body {
+    padding: 0px 10px;
+  }
+
+  body section .section-heading {
+    margin: 30px 0px;
+  }
+
+  body section .section-heading::after {
+    position: absolute;
+    height: 2px;
+    width: 73px;
+    background-color: #00945f;
+    content: "";
+    left: calc(50% - 36px);
+  }
+
+  footer {
+    border-top: 1px solid #00945f;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
